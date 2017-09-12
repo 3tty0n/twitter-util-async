@@ -4,12 +4,14 @@ name := "twitter-util-async"
 
 version := "1.2.1"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.3"
+
+crossScalaVersions := Seq("2.11.11", "2.12.3")
 
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-reflect" % "2.11.8",
-  "org.scala-lang.modules" %% "scala-async" % "0.9.5",
-  "com.twitter" %% "util-core" % "6.24.0",
+  "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+  "org.scala-lang.modules" %% "scala-async" % "0.9.7",
+  "com.twitter" %% "util-core" % "7.1.0",
   "junit" % "junit" % "4.12" % "test",
   "com.novocode" % "junit-interface" % "0.11" % "test"
 )
